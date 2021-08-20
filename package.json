@@ -7,7 +7,7 @@
   },
   "description": "Descriptive, easy to find JavaScript snippets, without nonsense abbreviations.",
   "icon": "img/logo.png",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "engines": {
     "vscode": ">=1.0.0"
   },
@@ -23,7 +23,7 @@
     "Snippets"
   ],
   "galleryBanner": {
-    "color": "#fafa61",
+    "color": "#00da00",
     "theme": "light"
   },
   "keywords": [

@@ -46,7 +46,7 @@ These snippets are available for the follow [language identifiers](https://code.
 
 You can install the [Snippets Ranger extension](https://marketplace.visualstudio.com/items?itemName=robole.snippets-ranger) to view the full list of snippets inside VS Code.
 
-I didn't repeat any of the builtin JavaScript snippets.
+I didn't repeat any of the builtin JavaScript snippets (see [FAQ for more](#where-do-the-standard-markdown-snippets-come-from)).
 
 <table>
 <thead><tr><th>Prefix</th><th>Name</th><th>Description</th><th>Body</th></tr></thead>
@@ -114,11 +114,13 @@ I didn't repeat any of the builtin JavaScript snippets.
 
 ## FAQ
 
-### 1) Where do the standard markdown snippets come from?
+### 1) Where are the builtin JavaScripts?
 
-There is a set of snippets for the standard markdown syntax installed with VS Code as part of the built-in markdown extension. [This is the source file](https://raw.githubusercontent.com/microsoft/vscode/94c9ea46838a9a619aeafb7e8afd1170c967bb55/extensions/javascript/snippets/javascript.code-snippets).
+There is a set of snippets for the JavaScript installed with VS Code as part of the built-in JavaScript extension. [This is the source file](https://raw.githubusercontent.com/microsoft/vscode/94c9ea46838a9a619aeafb7e8afd1170c967bb55/extensions/javascript/snippets/javascript.code-snippets).
 
-The [Snippets Ranger extension](https://marketplace.visualstudio.com/items?itemName=robole.snippets-ranger) will show the built-in snippets in a good-looking webview.
+You can see these inside VS Code by:
+1. By opening a JavaScript file and running the commmand `Insert Snippet`, which gives a list of the snippets in the dropdown. However, this list also contains any user and extension snippets for JavaScript. Option 2 is preferable if you want to see a clear overview of the separate snippet sets.
+1. The [Snippets Ranger extension](https://marketplace.visualstudio.com/items?itemName=robole.snippets-ranger) will show you the built-in snippets in a good-looking webview inside VS Code.
 
 ### 2) How do I use the snippets?
 

@@ -4,6 +4,13 @@ All notable changes to this extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.4.0] - 2021-08-21
+
+### Changed
+
+- Change galleryBanner.color in package.json.
+- Improved FAQ in readme.
+
 ## [0.3.0] - 2021-08-21
 
 ### Changed
