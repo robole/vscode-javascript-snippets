@@ -1,4 +1,146 @@
 {
+  "Array.prototype.concat": {
+    "prefix": "array concat",
+    "body": ["let ${1:newArray} = ${2:array1}.concat(${3:array2})", "$0"],
+    "description": "Joins two or more arrays, and returns a copy of the joined arrays"
+  },
+  "Array.prototype.copyWithin": {
+    "prefix": "array copyWithin",
+    "body": ["${1:array}.copyWithin(${1:target}, ${2:start}, ${3:end});", "$0"],
+    "description": "Copies array elements within the array, to and from specified positions. Syntax: array.copyWithin(target, start, end)."
+  },
+  "Array.prototype.every": {
+    "prefix": "array every",
+    "body": [
+      "let ${1:boolean} = ${2:array}.every((${3:item}) => {",
+      "\treturn $4",
+      "}",
+      "$0"
+    ],
+    "description": "Checks if every element in an array pass a test."
+  },
+  "Array.prototype.fill": {
+    "prefix": "array fill",
+    "body": ["${1:array}.fill(${1:target}, ${2:start}, ${3:end});", "$0"],
+    "description": "Fill the elements in an array with a static value."
+  },
+  "Array.prototype.filter": {
+    "prefix": "array filter",
+    "body": [
+      "let ${1:newArray} = ${2:array}.filter((${3:item}) => {",
+      "\treturn $4",
+      "}",
+      "$0"
+    ],
+    "description": "Creates a new array with every element in an array that pass a test"
+  },
+  "Array.prototype.find": {
+    "prefix": "array find",
+    "body": [
+      "let ${1:result} = ${2:array}.find((${3:item}) => {",
+      "\treturn $4",
+      "}",
+      "$0"
+    ],
+    "description": "Returns the value of the first element in an array that pass a test."
+  },
+  "Array.prototype.findIndex": {
+    "prefix": "array findIndex",
+    "body": [
+      "let ${1:result} = ${2:array}.findIndex((${3:item}) => {",
+      "\treturn $4",
+      "}",
+      "$0"
+    ],
+    "description": "Returns the index of the first element in an array that pass a test"
+  },
+  "Array.prototype.includes": {
+    "prefix": "array includes",
+    "body": [
+      "let ${1:boolean} = ${2:array}.includes(${3:element}, ${4:start})",
+      "$0"
+    ],
+    "description": "Check if an array contains the specified element. It is case sensitive."
+  },
+  "Array.prototype.indexOf": {
+    "prefix": "array indexOf",
+    "body": [
+      "let ${1:index} = ${2:array}.indexOf(${3:item}, ${4:start})",
+      "$0"
+    ],
+    "description": "Search the array for an element and return its position."
+  },
+  "Array.prototype.map": {
+    "prefix": "array map",
+    "body": [
+      "let ${1:newArray} = ${2:array}.map((${3:item}) => {",
+      "\treturn $4",
+      "}",
+      "$0"
+    ],
+    "description": "Creates a new array populated with the results of calling the provided function on every element in the array."
+  },
+  "Array.prototype.push": {
+    "prefix": "array push",
+    "body": ["${1:array}.push((${2:items});", "$0"],
+    "description": "Add new items to the end of an array."
+  },
+  "Array.prototype.reduce": {
+    "prefix": "array reduce",
+    "body": [
+      "let ${1:newArray} = ${2:array}.reduce((accumulator, currentValue) => {",
+      "\treturn $4",
+      "}",
+      "$0"
+    ],
+    "description": "Reduce the values of an array to a single value (going left-to-right)."
+  },
+  "Array.prototype.reduceRight": {
+    "prefix": "array reduceRight",
+    "body": [
+      "let ${1:newArray} = ${2:array}.reduceRight((accumulator, currentValue) => {",
+      "\treturn $4",
+      "}",
+      "$0"
+    ],
+    "description": "Reduce the values of an array to a single value (going left-to-right)."
+  },
+  "Array.prototype.slice": {
+    "prefix": "array slice",
+    "body": [
+      "let ${1:newArray} = ${2:array}.slice(${3:start}, ${4:end});",
+      "${0}"
+    ],
+    "description": "Selects a part of an array, and returns the new array."
+  },
+  "Array.prototype.some": {
+    "prefix": "array some",
+    "body": [
+      "let ${1:result} = ${2:array}.some((${3:item}) => {",
+      "\treturn $4",
+      "}",
+      "${0}"
+    ],
+    "description": "Checks if any of the elements in an array pass a test."
+  },
+  "Array.prototype.splice": {
+    "prefix": "array splice",
+    "body": [
+      "${1:array}.splice(${3:index}, ${4:howManyToRemove}, ${5:newItems});",
+      "${0}"
+    ],
+    "description": "Adds/Removes elements from an array."
+  },
+  "Array.prototype.unshift": {
+    "prefix": "array unshift",
+    "body": ["${1:array}.unshift(${3:items});", "${0}"],
+    "description": "Adds new elements to the beginning of an array, and returns the new length."
+  },
+  "Array destructuring": {
+    "prefix": "destructure array",
+    "body": ["const [${1:variables}] = ${2:arrayName};", "$0"],
+    "description": "Assign values from array elements to new variables using destructuring."
+  },
   "async function": {
     "prefix": "async function",
     "body": ["async function ${1:name}(${2:parameters}){", "\t$3", "}", "$0"],
@@ -23,61 +165,6 @@
     "prefix": "iife",
     "body": ["(function () {", "\t$1", "})();", "$0"],
     "description": "An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. It creates it's own local scope."
-  },
-  "Array.prototype.map": {
-    "prefix": "array map",
-    "body": [
-      "let ${1:newArray} = ${2:array}.map((${3:item}) => {",
-      "\treturn $4",
-      "}",
-      "$0"
-    ],
-    "description": "Creates a new array populated with the results of calling the provided function on every element in the array. "
-  },
-  "Array.prototype.reduce": {
-    "prefix": "array reduce",
-    "body": [
-      "let ${1:newArray} = ${2:array}.reduce((accumulator, currentValue) => {",
-      "\treturn $4",
-      "}",
-      "$0"
-    ],
-    "description": "Executes a user-supplied “reducer” callback function on each element of the array, passing in the return value from the calculation on the preceding element. Perhaps the easiest-to-understand example is to return the sum of all the elements in an array."
-  },
-  "Array.prototype.filter": {
-    "prefix": "array filter",
-    "body": [
-      "let ${1:newArray} = ${2:array}.filter((${3:item}) => {",
-      "\treturn $4",
-      "}",
-      "$0"
-    ],
-    "description": "Creates a new array with all elements that pass the test implemented by the provided function."
-  },
-  "Array.prototype.find": {
-    "prefix": "array find",
-    "body": [
-      "let ${1:result} = ${2:array}.find((${3:item}) => {",
-      "\treturn $4",
-      "}",
-      "$0"
-    ],
-    "description": "Returns the value of the first element in the provided array that satisfies the provided testing function."
-  },
-  "Array.prototype.some": {
-    "prefix": "array some",
-    "body": [
-      "let ${1:result} = ${2:array}.some((${3:item}) => {",
-      "\treturn $4",
-      "}",
-      "${0}"
-    ],
-    "description": "Tests whether at least one element in the array passes the test implemented by the provided function."
-  },
-  "Array destructuring": {
-    "prefix": "destructure array",
-    "body": ["const [${1:variables}] = ${2:arrayName};", "$0"],
-    "description": "Assign values from array elements to new variables using destructuring."
   },
   "Object destructuring": {
     "prefix": "destructure object",

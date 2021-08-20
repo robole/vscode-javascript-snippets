@@ -4,6 +4,16 @@ All notable changes to this extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.5.0] - 2021-08-21
+
+### Added
+
+- Added new Array snippets.
+
+### Changed
+
+- Changed main to show all array functions.
+
 ## [0.4.0] - 2021-08-21
 
 ### Changed
