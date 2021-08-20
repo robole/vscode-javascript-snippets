@@ -1,13 +1,13 @@
 {
   "name": "javascript-snippets",
-  "displayName": "JavaScript Snippets for Humans",
+  "displayName": "Humane JavaScript Snippets",
   "publisher": "robole",
   "author": {
     "name": "Rob O'Leary"
   },
   "description": "Descriptive, easy to find JavaScript snippets, without nonsense abbreviations.",
   "icon": "img/logo.png",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "vscode": ">=1.0.0"
   },
@@ -28,12 +28,19 @@
   },
   "keywords": [
     "javascript",
+    "vue",
+    "svelte",
+    "typescript",
+    "react",
     "snippets",
     "javascript snippets",
     "es6",
     "ES6 snippets",
+    "ecmascript snippets",
+    "svelte snippets",
+    "vue snippets",
     "typescript snippets",
-    "typescript"
+    "react snippets"
   ],
   "contributes": {
     "snippets": [

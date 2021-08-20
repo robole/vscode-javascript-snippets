@@ -3,16 +3,16 @@
     <img align="center" src="img/logo.png" width="200">
   <br>
 	<br>
-  JavaScript Snippets for Humans
+  Humane JavaScript Snippets
   <br>
   <br>
 </h1>
 <h4 align="center">Descriptive, easy to find JavaScript snippets, without nonsense abbreviations.</h4>
-
+<br/>
 <p align="center">
 <img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=made%20for&message=VS%20Code&color=0000ff" alt="Made for VSCode">
 <img src="https://img.shields.io/visual-studio-marketplace/v/robole.javascript-snippets?logo=visual-studio-code&color=ffa500" alt="Visual Studio Marketplace Version">
-<img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=size&message=11KB&color=008000"
+<img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=size&message=13KB&color=008000"
 alt="Extension file size in bytes">
 <img src="https://img.shields.io/visual-studio-marketplace/r/robole.javascript-snippets?logo=visual-studio-code&color=yellow" alt="Visual Studio Marketplace Rating">
 <img src="https://img.shields.io/visual-studio-marketplace/d/robole.javascript-snippets?logo=visual-studio-code&color=blue" alt="downloads"/>
@@ -21,14 +21,17 @@ alt="Extension file size in bytes">
 <a href="https://ko-fi.com/roboleary"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-$4-orange?logo=buy-me-a-coffee" alt="Buy me a coffee"></a>
 </p>
 
-Most snippet collections resemble bash aliases. You have a list of abbreviations such as "imp", "clg", "fre", and so on. You must learn these to use them. 🤕
+Most snippet collections resemble bash aliases. You have a list of abbreviations such as: "imp", "clg", "fre". You must learn these to use them. 🤕
 
 There is a better way!
 
 Snippets are not confined to using a single word as the trigger (prefix). We can be more descriptive, and make them easier to discover.
-For example, you want to find an array function, but not sure which to use, just type "arr" and you get a list with descriptions:
+
+For example, you want to find an array function, but you're not sure which to use. Just type "arr" and you get a list of array functions with descriptions:
 
 ![example with suggested array functions](img/array-functions.gif)
+
+In future, you know you want to use the `find` function, just type "fi" and you will get that as the first suggestion. 🔥
 
 ## Activation
 
@@ -46,6 +49,8 @@ You can install the [Snippets Ranger extension](https://marketplace.visualstudio
 I didn't repeat any of the builtin JavaScript snippets.
 
 Here is an excerpt:
+
+<img src="img/snippets-list.png" alt="list of snippets" loading="lazy">
 
 ## Installation
 
@@ -83,7 +88,6 @@ Run the command `Preferences: Open Settings (UI)` to open the keyboard shortcuts
 			"name": "arrow function"
 		}
 	}
-
 ]
 ```
 
@@ -100,3 +104,7 @@ If you are happy with the extension, please star the repo, and leave a review to
 You can [buy me a coffee](https://ko-fi.com/roboleary) if you would like to enable me to make more great open-source software and tutorials. ☕🙏
 
 [![buy me a coffee on kofi](img/buymeacoffee.png)](https://ko-fi.com/roboleary)
+
+## Image Attribution
+
+Logo inspired by [Brain by Nithinan Tatah from the Noun Project](https://thenounproject.com/search/?q=brain&i=2452319).
