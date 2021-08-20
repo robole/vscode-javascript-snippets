@@ -3,7 +3,7 @@
     <img align="center" src="img/logo.png" width="200">
   <br>
 	<br>
-  Humane JavaScript Snippets
+  Humane JS Snippets
   <br>
   <br>
 </h1>

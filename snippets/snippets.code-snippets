@@ -141,12 +141,12 @@
     "body": ["const [${1:variables}] = ${2:arrayName};", "$0"],
     "description": "Assign values from array elements to new variables using destructuring."
   },
-  "json parse": {
+  "JSON.parse": {
     "prefix": "json parse",
     "body": ["let ${1:obj} = JSON.parse(${2:string});", "$0"],
     "description": "Parses a JSON string and returns a JavaScript object"
   },
-  "json stringify": {
+  "JSON.stringify": {
     "prefix": "json stringify",
     "body": ["let ${1:string} = JSON.parse(${2:obj});", "$0"],
     "description": "Convert a JavaScript object to a JSON string."

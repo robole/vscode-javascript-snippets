@@ -1,13 +1,13 @@
 {
   "name": "javascript-snippets",
-  "displayName": "Humane JavaScript Snippets",
+  "displayName": "Humane JS Snippets",
   "publisher": "robole",
   "author": {
     "name": "Rob O'Leary"
   },
   "description": "Descriptive, easy to find JavaScript snippets, without nonsense abbreviations.",
   "icon": "img/logo.png",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "engines": {
     "vscode": ">=1.0.0"
   },
@@ -34,6 +34,7 @@
     "react",
     "snippets",
     "javascript snippets",
+    "js snippets",
     "es6",
     "ES6 snippets",
     "ecmascript snippets",

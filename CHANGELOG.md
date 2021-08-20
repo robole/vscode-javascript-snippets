@@ -4,6 +4,12 @@ All notable changes to this extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.6.2] - 2021-08-21
+
+### Fixed
+
+- Change displayName to "Humane JS Snippets".
+
 ## [0.6.1] - 2021-08-21
 
 ### Fixed
