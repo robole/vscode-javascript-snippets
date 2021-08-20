@@ -147,7 +147,7 @@
     "description": "Parses a JSON string and returns a JavaScript object"
   },
   "json stringify": {
-    "prefix": "json parse",
+    "prefix": "json stringify",
     "body": ["let ${1:string} = JSON.parse(${2:obj});", "$0"],
     "description": "Convert a JavaScript object to a JSON string."
   }

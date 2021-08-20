@@ -12,7 +12,7 @@
 <p align="center">
 <img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=made%20for&message=VS%20Code&color=0000ff" alt="Made for VSCode">
 <img src="https://img.shields.io/visual-studio-marketplace/v/robole.javascript-snippets?logo=visual-studio-code&color=ffa500" alt="Visual Studio Marketplace Version">
-<img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=size&message=13KB&color=008000"
+<img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=size&message=20KB&color=008000"
 alt="Extension file size in bytes">
 <img src="https://img.shields.io/visual-studio-marketplace/r/robole.javascript-snippets?logo=visual-studio-code&color=yellow" alt="Visual Studio Marketplace Rating">
 <img src="https://img.shields.io/visual-studio-marketplace/d/robole.javascript-snippets?logo=visual-studio-code&color=blue" alt="downloads"/>
@@ -139,31 +139,16 @@ I didn't repeat any of the builtin JavaScript snippets (see [FAQ for more](#wher
 <td>destructure array</td>
 <td>Array destructuring</td>
 <td>Assign values from array elements to new variables using destructuring.</td><td><code>const [${1:variables}] = ${2:arrayName};<br>$0<br></code></td>
+</tr><tr>
+
+<td>json parse</td>
+<td>json parse</td>
+<td>Parses a JSON string and returns a JavaScript object.</td><td><code>let ${1:obj} = JSON.parse(${2:string});<br> $0</code></td>
 
 </tr><tr>
-<td>async function</td>
-<td>async function</td>
-<td>Create an async function. Async functions can contain zero or more await expressions.</td><td><code>async function ${1:name}(${2:parameters}){<br> $3<br>}<br>$0<br></code></td>
-
-</tr><tr>
-<td>arrow function,=&gt;</td>
-<td>arrow function</td>
-<td>Creates an arrow function with optional parameters.</td><td><code>(${1:parameters}) =&gt; {<br> $2<br>}<br>$0<br></code></td>
-
-</tr><tr>
-<td>prototype function</td>
-<td>prototype function</td>
-<td>Creates an prototype function with optional parameters.</td><td><code>${1:object}.prototype.${2:name} = function(${3:parameters}) {<br> $4<br>}<br>$0<br></code></td>
-
-</tr><tr>
-<td>iife</td>
-<td>Immediately Invoked Function Expression (IIFE)</td>
-<td>An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. It creates it's own local scope.</td><td><code>(function () {<br> $1<br>})();<br>$0<br></code></td>
-
-</tr><tr>
-<td>destructure object</td>
-<td>Object destructuring</td>
-<td>Assign values from object to new variables using destructuring.</td><td><code>const {${1:variables}} = ${2:objectName};<br>$0<br></code></td>
+<td>json stringify</td>
+<td>json stringify</td>
+<td>Convert a JavaScript object to a JSON string.</td><td><code>let ${1:string} = JSON.parse(${2:obj});<br/>$0</code></td>
 
 </tr></tbody></table>
 
