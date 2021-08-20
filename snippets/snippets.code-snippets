@@ -17,12 +17,12 @@
       "}",
       "$0"
     ],
-    "description": "Creates an arrow function with optional parameters."
+    "description": "Creates an prototype function with optional parameters."
   },
   "Immediately Invoked Function Expression (IIFE)": {
     "prefix": "iife",
     "body": ["(function () {", "\t$1", "})();", "$0"],
-    "description": "An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined."
+    "description": "An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. It creates it's own local scope."
   },
   "Array.prototype.map": {
     "prefix": "array map",
@@ -77,11 +77,11 @@
   "Array destructuring": {
     "prefix": "destructure array",
     "body": ["const [${1:variables}] = ${2:arrayName};", "$0"],
-    "description": "Assign variables from array using destructuring."
+    "description": "Assign values from array elements to new variables using destructuring."
   },
   "Object destructuring": {
     "prefix": "destructure object",
     "body": ["const {${1:variables}} = ${2:objectName};", "$0"],
-    "description": "Assign variables from object using destructuring."
+    "description": "Assign values from object to new variables using destructuring."
   }
 }

@@ -48,9 +48,64 @@ You can install the [Snippets Ranger extension](https://marketplace.visualstudio
 
 I didn't repeat any of the builtin JavaScript snippets.
 
-Here is an excerpt:
+<table>
+<thead><tr><th>Prefix</th><th>Name</th><th>Description</th><th>Body</th></tr></thead>
+<tbody><tr>
+<td>async function</td>
+<td>async function</td>
+<td>Create an async function. Async functions can contain zero or more await expressions.</td><td><code>async function ${1:name}(${2:parameters}){<br> $3<br>}<br>$0<br></code></td>
 
-<img src="img/snippets-list.png" alt="list of snippets" loading="lazy">
+</tr><tr>
+<td>arrow function,=&gt;</td>
+<td>arrow function</td>
+<td>Creates an arrow function with optional parameters.</td><td><code>(${1:parameters}) =&gt; {<br> $2<br>}<br>$0<br></code></td>
+
+</tr><tr>
+<td>prototype function</td>
+<td>prototype function</td>
+<td>Creates a prototype function with optional parameters.</td><td><code>${1:object}.prototype.${2:name} = function(${3:parameters}) {<br> $4<br>}<br>$0<br></code></td>
+
+</tr><tr>
+<td>iife</td>
+<td>Immediately Invoked Function Expression (IIFE)</td>
+<td>An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.</td><td><code>(function () {<br> $1<br>})();<br>$0<br></code></td>
+
+</tr><tr>
+<td>array map</td>
+<td>Array.prototype.map</td>
+<td>Creates a new array populated with the results of calling the provided function on every element in the array. </td><td><code>let ${1:newArray} = ${2:array}.map((${3:item}) =&gt; {<br> return $4<br>}<br>$0<br></code></td>
+
+</tr><tr>
+<td>array reduce</td>
+<td>Array.prototype.reduce</td>
+<td>Executes a user-supplied “reducer” callback function on each element of the array, passing in the return value from the calculation on the preceding element. Perhaps the easiest-to-understand example is to return the sum of all the elements in an array.</td><td><code>let ${1:newArray} = ${2:array}.reduce((accumulator, currentValue) =&gt; {<br> return $4<br>}<br>$0<br></code></td>
+
+</tr><tr>
+<td>array filter</td>
+<td>Array.prototype.filter</td>
+<td>Creates a new array with all elements that pass the test implemented by the provided function.</td><td><code>let ${1:newArray} = ${2:array}.filter((${3:item}) =&gt; {<br> return $4<br>}<br>$0<br></code></td>
+
+</tr><tr>
+<td>array find</td>
+<td>Array.prototype.find</td>
+<td>Returns the value of the first element in the provided array that satisfies the provided testing function.</td><td><code>let ${1:result} = ${2:array}.find((${3:item}) =&gt; {<br> return $4<br>}<br>$0<br></code></td>
+
+</tr><tr>
+<td>array some</td>
+<td>Array.prototype.some</td>
+<td>Tests whether at least one element in the array passes the test implemented by the provided function.</td><td><code>let ${1:result} = ${2:array}.some((${3:item}) =&gt; {<br> return $4<br>}<br>${0}<br></code></td>
+
+</tr><tr>
+<td>destructure array</td>
+<td>Array destructuring</td>
+<td>Assign values from array elements to new variables using destructuring.</td><td><code>const [${1:variables}] = ${2:arrayName};<br>$0<br></code></td>
+
+</tr><tr>
+<td>destructure object</td>
+<td>Object destructuring</td>
+<td>Assign values from object to new variables using destructuring.</td><td><code>const {${1:variables}} = ${2:objectName};<br>$0<br></code></td>
+
+</tr></tbody></table>
 
 ## Installation
 
