@@ -141,34 +141,14 @@
     "body": ["const [${1:variables}] = ${2:arrayName};", "$0"],
     "description": "Assign values from array elements to new variables using destructuring."
   },
-  "async function": {
-    "prefix": "async function",
-    "body": ["async function ${1:name}(${2:parameters}){", "\t$3", "}", "$0"],
-    "description": "Create an async function. Async functions can contain zero or more await expressions."
+  "json parse": {
+    "prefix": "json parse",
+    "body": ["let ${1:obj} = JSON.parse(${2:string});", "$0"],
+    "description": "Parses a JSON string and returns a JavaScript object"
   },
-  "arrow function": {
-    "prefix": ["arrow function", "=>"],
-    "body": ["(${1:parameters}) => {", "\t$2", "}", "$0"],
-    "description": "Creates an arrow function with optional parameters."
-  },
-  "prototype function": {
-    "prefix": "prototype function",
-    "body": [
-      "${1:object}.prototype.${2:name} = function(${3:parameters}) {",
-      "\t$4",
-      "}",
-      "$0"
-    ],
-    "description": "Creates an prototype function with optional parameters."
-  },
-  "Immediately Invoked Function Expression (IIFE)": {
-    "prefix": "iife",
-    "body": ["(function () {", "\t$1", "})();", "$0"],
-    "description": "An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. It creates it's own local scope."
-  },
-  "Object destructuring": {
-    "prefix": "destructure object",
-    "body": ["const {${1:variables}} = ${2:objectName};", "$0"],
-    "description": "Assign values from object to new variables using destructuring."
+  "json stringify": {
+    "prefix": "json parse",
+    "body": ["let ${1:string} = JSON.parse(${2:obj});", "$0"],
+    "description": "Convert a JavaScript object to a JSON string."
   }
 }

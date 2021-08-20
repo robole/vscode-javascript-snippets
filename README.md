@@ -182,7 +182,7 @@ You can see these inside VS Code by:
 1. By opening a JavaScript file and running the commmand `Insert Snippet`, which gives a list of the snippets in the dropdown. However, this list also contains any user and extension snippets for JavaScript. Option 2 is preferable if you want to see a clear overview of the separate snippet sets.
 1. The [Snippets Ranger extension](https://marketplace.visualstudio.com/items?itemName=robole.snippets-ranger) will show you the built-in snippets in a good-looking webview inside VS Code.
 
-### 2) How can I get see snippets to be offered at the top of the quick suggetion list?
+### 2) How do you get snippets offered at the top of the suggetion list?
 
 Snippets are mixed in with other suggestions, and by default they are placed towards the end of the list. To promote suggestions to the top of the list, you can set `editor.snippetSuggestions": "top"` in your `settings.json`.
 
