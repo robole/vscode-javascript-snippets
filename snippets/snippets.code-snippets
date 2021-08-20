@@ -1,0 +1,87 @@
+{
+  "async function": {
+    "prefix": "async function",
+    "body": ["async function ${1:name}(${2:parameters}){", "\t$3", "}", "$0"],
+    "description": "Create an async function. Async functions can contain zero or more await expressions."
+  },
+  "arrow function": {
+    "prefix": ["arrow function", "=>"],
+    "body": ["(${1:parameters}) => {", "\t$2", "}", "$0"],
+    "description": "Creates an arrow function with optional parameters."
+  },
+  "prototype function": {
+    "prefix": "prototype function",
+    "body": [
+      "${1:object}.prototype.${2:name} = function(${3:parameters}) {",
+      "\t$4",
+      "}",
+      "$0"
+    ],
+    "description": "Creates an arrow function with optional parameters."
+  },
+  "Immediately Invoked Function Expression (IIFE)": {
+    "prefix": "iife",
+    "body": ["(function () {", "\t$1", "})();", "$0"],
+    "description": "An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined."
+  },
+  "Array.prototype.map": {
+    "prefix": "array map",
+    "body": [
+      "let ${1:newArray} = ${2:array}.map((${3:item}) => {",
+      "\treturn $4",
+      "}",
+      "$0"
+    ],
+    "description": "Creates a new array populated with the results of calling the provided function on every element in the array. "
+  },
+  "Array.prototype.reduce": {
+    "prefix": "array reduce",
+    "body": [
+      "let ${1:newArray} = ${2:array}.reduce((accumulator, currentValue) => {",
+      "\treturn $4",
+      "}",
+      "$0"
+    ],
+    "description": "Executes a user-supplied “reducer” callback function on each element of the array, passing in the return value from the calculation on the preceding element. Perhaps the easiest-to-understand example is to return the sum of all the elements in an array."
+  },
+  "Array.prototype.filter": {
+    "prefix": "array filter",
+    "body": [
+      "let ${1:newArray} = ${2:array}.filter((${3:item}) => {",
+      "\treturn $4",
+      "}",
+      "$0"
+    ],
+    "description": "Creates a new array with all elements that pass the test implemented by the provided function."
+  },
+  "Array.prototype.find": {
+    "prefix": "array find",
+    "body": [
+      "let ${1:result} = ${2:array}.find((${3:item}) => {",
+      "\treturn $4",
+      "}",
+      "$0"
+    ],
+    "description": "Returns the value of the first element in the provided array that satisfies the provided testing function."
+  },
+  "Array.prototype.some": {
+    "prefix": "array some",
+    "body": [
+      "let ${1:result} = ${2:array}.some((${3:item}) => {",
+      "\treturn $4",
+      "}",
+      "${0}"
+    ],
+    "description": "Tests whether at least one element in the array passes the test implemented by the provided function."
+  },
+  "Array destructuring": {
+    "prefix": "destructure array",
+    "body": ["const [${1:variables}] = ${2:arrayName};", "$0"],
+    "description": "Assign variables from array using destructuring."
+  },
+  "Object destructuring": {
+    "prefix": "destructure object",
+    "body": ["const {${1:variables}} = ${2:objectName};", "$0"],
+    "description": "Assign variables from object using destructuring."
+  }
+}
