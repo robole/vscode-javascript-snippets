@@ -4,6 +4,13 @@ All notable changes to this extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.7.0] - 2021-08-21
+
+### Changed
+
+- Changed prefix for array destructuring to "array destructure" to fall in line with others.
+- Improved readme.
+
 ## [0.6.2] - 2021-08-21
 
 ### Fixed

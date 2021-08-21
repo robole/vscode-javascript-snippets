@@ -136,8 +136,8 @@
     "body": ["${1:array}.unshift(${3:items});", "${0}"],
     "description": "Adds new elements to the beginning of an array, and returns the new length."
   },
-  "Array destructuring": {
-    "prefix": "destructure array",
+  "Array destructure": {
+    "prefix": "array destructure",
     "body": ["const [${1:variables}] = ${2:arrayName};", "$0"],
     "description": "Assign values from array elements to new variables using destructuring."
   },

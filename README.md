@@ -25,7 +25,7 @@ Most snippet collections resemble bash aliases. You have a list of nonsense abbr
 
 There is a better way!
 
-Snippets are not confined to using a single word as the trigger (prefix), and quick suggestions offered by VS Code are produced from a fuzzy substring search on the prefixes. This means we can use spaces in prefixes, and add more descriptive prefixes to make our snippets easier to discover.
+Snippets are not confined to using a single word as the trigger (prefix), quick suggestions offered by VS Code are produced from a fuzzy substring search on the prefix. This means we can use spaces in prefixes, and be more descriptive to make our snippets easier to discover.
 
 For example, you want to find an array function, but you're not sure which to use. Just type "arr" and you get a list of array functions with descriptions:
 
@@ -136,8 +136,8 @@ I didn't repeat any of the builtin JavaScript snippets (see [FAQ for more](#wher
 <td>Adds new elements to the beginning of an array, and returns the new length.</td><td><code>${1:array}.unshift(${3:items});<br>${0}<br></code></td>
 
 </tr><tr>
-<td>destructure array</td>
-<td>Array destructuring</td>
+<td>array destructure</td>
+<td>Array destructure</td>
 <td>Assign values from array elements to new variables using destructuring.</td><td><code>const [${1:variables}] = ${2:arrayName};<br>$0<br></code></td>
 </tr><tr>
 
@@ -164,16 +164,16 @@ I didn't repeat any of the builtin JavaScript snippets (see [FAQ for more](#wher
 There is a set of snippets for the JavaScript installed with VS Code as part of the built-in JavaScript extension. [This is the source file](https://raw.githubusercontent.com/microsoft/vscode/94c9ea46838a9a619aeafb7e8afd1170c967bb55/extensions/javascript/snippets/javascript.code-snippets).
 
 You can see these inside VS Code by:
-1. By opening a JavaScript file and running the commmand `Insert Snippet`, which gives a list of the snippets in the dropdown. However, this list also contains any user and extension snippets for JavaScript. Option 2 is preferable if you want to see a clear overview of the separate snippet sets.
-1. The [Snippets Ranger extension](https://marketplace.visualstudio.com/items?itemName=robole.snippets-ranger) will show you the built-in snippets in a good-looking webview inside VS Code.
+1. By opening a JavaScript file and running the commmand `Insert Snippet`, which gives a list of the snippets in the dropdown.
+1. The [Snippets Ranger extension](https://marketplace.visualstudio.com/items?itemName=robole.snippets-ranger) will show you the built-in snippets organised into groups in a good-looking webview.
 
-### 2) How do you get snippets offered at the top of the suggetion list?
+### 2) How do you get snippets to be shown at the top of the suggetion list?
 
 Snippets are mixed in with other suggestions, and by default they are placed towards the end of the list. To promote suggestions to the top of the list, you can set `editor.snippetSuggestions": "top"` in your `settings.json`.
 
 ### 3) How do I use the snippets?
 
-To insert a snippet, you can just type one of the prefixes in a markdown file, and you will be offered a completion suggestion. The setting `Editor: Snippet Suggestions` controls whether snippets are shown with other suggestions and how they are sorted. By default, they are shown inline.
+To insert a snippet, you can just type one of the prefixes in a JavaScript file, and you will be offered a completion suggestion. The setting `Editor: Snippet Suggestions` controls whether snippets are shown with other suggestions and how they are sorted. By default, they are shown inline.
 
 Alternatively, you can open the Command Palette (`Ctrl+Shift+P`) and run the command "Insert Snippet", which presents you with a list to choose from.
 
