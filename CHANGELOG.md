@@ -4,6 +4,13 @@ All notable changes to this extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.7.1] - 2021-09-15
+
+### Fixed
+
+- Fixed some mistakes with missing semi-colons and closing brackets.
+- Fixed link to Open VSX marketplace.
+
 ## [0.7.0] - 2021-08-21
 
 ### Changed

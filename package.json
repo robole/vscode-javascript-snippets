@@ -7,7 +7,7 @@
   },
   "description": "Descriptive, easy to find JavaScript snippets, without nonsense abbreviations.",
   "icon": "img/logo.png",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "engines": {
     "vscode": ">=1.0.0"
   },

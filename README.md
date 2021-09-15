@@ -48,113 +48,121 @@ You can install the [Snippets Ranger extension](https://marketplace.visualstudio
 
 I didn't repeat any of the builtin JavaScript snippets (see [FAQ for more](#where-do-the-standard-markdown-snippets-come-from)).
 
-<table data-path="/home/rob/programming/workspace/js/VS Code/vscode-javascript-snippets/snippets/snippets.code-snippets">
-<thead><tr><th>Prefix</th><th>Name</th><th>Description</th><th>Body</th><th>Action</th></tr></thead>
-<tbody><tr>
-<td>array concat</td>
-<td>Array.prototype.concat</td>
-<td>Joins two or more arrays, and returns a copy of the joined arrays</td><td><code>let ${1:newArray} = ${2:array1}.concat(${3:array2})<br>$0<br></code></td>
-
-</tr><tr>
-<td>array copyWithin</td>
-<td>Array.prototype.copyWithin</td>
-<td>Copies array elements within the array, to and from specified positions. Syntax: array.copyWithin(target, start, end).</td><td><code>${1:array}.copyWithin(${1:target}, ${2:start}, ${3:end});<br>$0<br></code></td>
-
-</tr><tr>
-<td>array every</td>
-<td>Array.prototype.every</td>
-<td>Checks if every element in an array pass a test.</td><td><code>let ${1:boolean} = ${2:array}.every((${3:item}) =&gt; {<br> return $4<br>}<br>$0<br></code></td>
-
-</tr><tr>
-<td>array fill</td>
-<td>Array.prototype.fill</td>
-<td>Fill the elements in an array with a static value.</td><td><code>${1:array}.fill(${1:target}, ${2:start}, ${3:end});<br>$0<br></code></td>
-
-</tr><tr>
-<td>array filter</td>
-<td>Array.prototype.filter</td>
-<td>Creates a new array with every element in an array that pass a test</td><td><code>let ${1:newArray} = ${2:array}.filter((${3:item}) =&gt; {<br> return $4<br>}<br>$0<br></code></td>
-
-</tr><tr>
-<td>array find</td>
-<td>Array.prototype.find</td>
-<td>Returns the value of the first element in an array that pass a test.</td><td><code>let ${1:result} = ${2:array}.find((${3:item}) =&gt; {<br> return $4<br>}<br>$0<br></code></td>
-
-</tr><tr>
-<td>array findIndex</td>
-<td>Array.prototype.findIndex</td>
-<td>Returns the index of the first element in an array that pass a test</td><td><code>let ${1:result} = ${2:array}.findIndex((${3:item}) =&gt; {<br> return $4<br>}<br>$0<br></code></td>
-
-</tr><tr>
-<td>array includes</td>
-<td>Array.prototype.includes</td>
-<td>Check if an array contains the specified element. It is case sensitive.</td><td><code>let ${1:boolean} = ${2:array}.includes(${3:element}, ${4:start})<br>$0<br></code></td>
-
-</tr><tr>
-<td>array indexOf</td>
-<td>Array.prototype.indexOf</td>
-<td>Search the array for an element and return its position.</td><td><code>let ${1:index} = ${2:array}.indexOf(${3:item}, ${4:start})<br>$0<br></code></td>
-
-</tr><tr>
-<td>array map</td>
-<td>Array.prototype.map</td>
-<td>Creates a new array populated with the results of calling the provided function on every element in the array.</td><td><code>let ${1:newArray} = ${2:array}.map((${3:item}) =&gt; {<br> return $4<br>}<br>$0<br></code></td>
-
-</tr><tr>
-<td>array push</td>
-<td>Array.prototype.push</td>
-<td>Add new items to the end of an array.</td><td><code>${1:array}.push((${2:items});<br>$0<br></code></td>
-
-</tr><tr>
-<td>array reduce</td>
-<td>Array.prototype.reduce</td>
-<td>Reduce the values of an array to a single value (going left-to-right).</td><td><code>let ${1:newArray} = ${2:array}.reduce((accumulator, currentValue) =&gt; {<br> return $4<br>}<br>$0<br></code></td>
-
-</tr><tr>
-<td>array reduceRight</td>
-<td>Array.prototype.reduceRight</td>
-<td>Reduce the values of an array to a single value (going left-to-right).</td><td><code>let ${1:newArray} = ${2:array}.reduceRight((accumulator, currentValue) =&gt; {<br> return $4<br>}<br>$0<br></code></td>
-
-</tr><tr>
-<td>array slice</td>
-<td>Array.prototype.slice</td>
-<td>Selects a part of an array, and returns the new array.</td><td><code>let ${1:newArray} = ${2:array}.slice(${3:start}, ${4:end});<br>${0}<br></code></td>
-
-</tr><tr>
-<td>array some</td>
-<td>Array.prototype.some</td>
-<td>Checks if any of the elements in an array pass a test.</td><td><code>let ${1:result} = ${2:array}.some((${3:item}) =&gt; {<br> return $4<br>}<br>${0}<br></code></td>
-
-</tr><tr>
-<td>array splice</td>
-<td>Array.prototype.splice</td>
-<td>Adds/Removes elements from an array.</td><td><code>${1:array}.splice(${3:index}, ${4:howManyToRemove}, ${5:newItems});<br>${0}<br></code></td>
-
-</tr><tr>
-<td>array unshift</td>
-<td>Array.prototype.unshift</td>
-<td>Adds new elements to the beginning of an array, and returns the new length.</td><td><code>${1:array}.unshift(${3:items});<br>${0}<br></code></td>
-
-</tr><tr>
-<td>array destructure</td>
-<td>Array destructure</td>
-<td>Assign values from array elements to new variables using destructuring.</td><td><code>const [${1:variables}] = ${2:arrayName};<br>$0<br></code></td>
-</tr><tr>
-
-<td>json parse</td>
-<td>json parse</td>
-<td>Parses a JSON string and returns a JavaScript object.</td><td><code>let ${1:obj} = JSON.parse(${2:string});<br> $0</code></td>
-
-</tr><tr>
-<td>json stringify</td>
-<td>json stringify</td>
-<td>Convert a JavaScript object to a JSON string.</td><td><code>let ${1:string} = JSON.parse(${2:obj});<br/>$0</code></td>
-
-</tr></tbody></table>
+<table>
+<thead>
+  <tr>
+    <th>Prefix</th>
+    <th>Description</th>
+    <th>Body</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>array concat</td>
+    <td>Joins two or more arrays, and returns a copy of the joined arrays</td>
+    <td>let ${1:newArray} = ${2:array1}.concat(${3:array2});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>array copyWithin</td>
+    <td>Copies array elements within the array, to and from specified positions. Syntax: array.copyWithin(target, start, end).</td>
+    <td>${1:array}.copyWithin(${2:target}, ${3:start}, ${4:end});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>array every</td>
+    <td>Checks if every element in an array pass a test.</td>
+    <td>let ${1:boolean} = ${2:array}.every((${3:item}) =&gt; {<br> $4<br>});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>array fill</td>
+    <td>Fill the elements in an array with a static value.</td>
+    <td>${1:array}.fill(${2:target}, ${3:start}, ${4:end});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>array filter</td>
+    <td>Creates a new array with every element in an array that pass a test</td>
+    <td>let ${1:newArray} = ${2:array}.filter((${3:item}) =&gt; {<br> $4<br>});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>array find</td>
+    <td>Returns the value of the first element in an array that pass a test.</td>
+    <td>let ${1:result} = ${2:array}.find((${3:item}) =&gt; {<br> $4<br>});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>array findIndex</td>
+    <td>Returns the index of the first element in an array that pass a test</td>
+    <td>let ${1:result} = ${2:array}.findIndex((${3:item}) =&gt; {<br> $4<br>});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>array includes</td>
+    <td>Check if an array contains the specified element. It is case sensitive.</td>
+    <td>let ${1:boolean} = ${2:array}.includes(${3:element}, ${4:start});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>array indexOf</td>
+    <td>Search the array for an element and return its position.</td>
+    <td>let ${1:index} = ${2:array}.indexOf(${3:item}, ${4:start});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>array map</td>
+    <td>Creates a new array populated with the results of calling the provided function on every element in the array.</td>
+    <td>let ${1:newArray} = ${2:array}.map((${3:item}) =&gt; {<br> $4<br>});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>array push</td>
+    <td>Add new items to the end of an array.</td>
+    <td>${1:array}.push(${2:items});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>array reduce</td>
+    <td>Reduce the values of an array to a single value (going left-to-right).</td>
+    <td>let ${1:newValue} = ${2:array}.reduce((sum, currentValue) =&gt; {<br> $4<br>});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>array reduceRight</td>
+    <td>Reduce the values of an array to a single value (going left-to-right).</td>
+    <td>let ${1:newValue} = ${2:array}.reduceRight((sum, currentValue) =&gt; {<br> $4<br>});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>array slice</td>
+    <td>Selects a part of an array, and returns the new array.</td>
+    <td>let ${1:newArray} = ${2:array}.slice(${3:start}, ${4:end});<br>${0}<br></td>
+  </tr>
+  <tr>
+    <td>array some</td>
+    <td>Checks if any of the elements in an array pass a test.</td>
+    <td>let ${1:result} = ${2:array}.some((${3:item}) =&gt; {<br> $4<br>});<br>${0}<br></td>
+  </tr>
+  <tr>
+    <td>array splice</td>
+    <td>Adds/Removes elements from an array.</td>
+    <td>${1:array}.splice(${3:index}, ${4:howManyToRemove}, ${5:newItems});<br>${0}<br></td>
+  </tr>
+  <tr>
+    <td>array unshift</td>
+    <td>Adds new elements to the beginning of an array, and returns the new length.</td>
+    <td>${1:array}.unshift(${3:items});<br>${0}<br></td>
+  </tr>
+  <tr>
+    <td>array destructure</td>
+    <td>Assign values from array elements to new variables using destructuring.</td>
+    <td>const [${1:variables}] = ${2:arrayName};<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>json parse</td>
+    <td>Parses a JSON string and returns a JavaScript object</td>
+    <td>let ${1:obj} = JSON.parse(${2:string});<br>$0<br></td>
+  </tr>
+  <tr>
+    <td>json stringify</td>
+    <td>Convert a JavaScript object to a JSON string.</td>
+    <td>let ${1:string} = JSON.parse(${2:obj});<br>$0<br></td>
+  </tr>
+</tbody>
+</table>
 
 ## Installation
 
-1. The extension is listed in the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=robole.javascript-snippets) and [Open VSX Marketplace](https://open-vsx.org/extension/robole/markdown-snippets) where you can download or install it directly.
+1. The extension is listed in the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=robole.javascript-snippets) and [Open VSX Marketplace](https://open-vsx.org/extension/robole/javascript-snippets) where you can download or install it directly.
 1. From the Command-line: Run the command `code --install-extension robole.javascript-snippets`.
 
 ## FAQ
@@ -203,13 +211,15 @@ The `args.name` property <u>must exactly match</u> the snippet name.
 
 You can read my comprehensive guide on Snippets on FreeCodeCamp: [Visual Studio Code Snippets – the Definitive VS Code Snippet Guide for Beginners](https://www.freecodecamp.org/news/definitive-guide-to-snippets-visual-studio-code/). It's not just for beginners! 😉
 
-## Show gratitude
+## Show appreciation
 
-If you are happy with the extension, please star the repo, and leave a review to help others find it. 🌟🌟🌟🌟🌟
+If you are happy with the extension: please star the repo 🌟, and [leave a review in the visual studio marketplace](https://marketplace.visualstudio.com/items?itemName=robole.marky-stats&ssr=false#review-details) to help others find it. 🌟🌟🌟🌟🌟
 
-You can [buy me a coffee](https://ko-fi.com/roboleary) if you would like to enable me to make more great open-source software and tutorials. ☕🙏
+You can show your appreciation by [buying me a coffee or sponsoring me](https://ko-fi.com/roboleary). This will offer me encouragement to continue, and will provide a path to dedicating more time to open-source in the future.
 
-[![buy me a coffee on kofi](img/buymeacoffee.png)](https://ko-fi.com/roboleary)
+<p align="center">
+<a href="https://ko-fi.com/roboleary"><img src="img/coffee.png" alt="buy me a coffee"></a>
+</p>
 
 ## Image Attribution
 

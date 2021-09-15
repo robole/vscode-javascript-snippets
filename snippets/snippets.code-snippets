@@ -1,35 +1,35 @@
 {
   "Array.prototype.concat": {
     "prefix": "array concat",
-    "body": ["let ${1:newArray} = ${2:array1}.concat(${3:array2})", "$0"],
+    "body": ["let ${1:newArray} = ${2:array1}.concat(${3:array2});", "$0"],
     "description": "Joins two or more arrays, and returns a copy of the joined arrays"
   },
   "Array.prototype.copyWithin": {
     "prefix": "array copyWithin",
-    "body": ["${1:array}.copyWithin(${1:target}, ${2:start}, ${3:end});", "$0"],
+    "body": ["${1:array}.copyWithin(${2:target}, ${3:start}, ${4:end});", "$0"],
     "description": "Copies array elements within the array, to and from specified positions. Syntax: array.copyWithin(target, start, end)."
   },
   "Array.prototype.every": {
     "prefix": "array every",
     "body": [
       "let ${1:boolean} = ${2:array}.every((${3:item}) => {",
-      "\treturn $4",
-      "}",
+      "\t$4",
+      "});",
       "$0"
     ],
     "description": "Checks if every element in an array pass a test."
   },
   "Array.prototype.fill": {
     "prefix": "array fill",
-    "body": ["${1:array}.fill(${1:target}, ${2:start}, ${3:end});", "$0"],
+    "body": ["${1:array}.fill(${2:target}, ${3:start}, ${4:end});", "$0"],
     "description": "Fill the elements in an array with a static value."
   },
   "Array.prototype.filter": {
     "prefix": "array filter",
     "body": [
       "let ${1:newArray} = ${2:array}.filter((${3:item}) => {",
-      "\treturn $4",
-      "}",
+      "\t$4",
+      "});",
       "$0"
     ],
     "description": "Creates a new array with every element in an array that pass a test"
@@ -38,8 +38,8 @@
     "prefix": "array find",
     "body": [
       "let ${1:result} = ${2:array}.find((${3:item}) => {",
-      "\treturn $4",
-      "}",
+      "\t$4",
+      "});",
       "$0"
     ],
     "description": "Returns the value of the first element in an array that pass a test."
@@ -48,8 +48,8 @@
     "prefix": "array findIndex",
     "body": [
       "let ${1:result} = ${2:array}.findIndex((${3:item}) => {",
-      "\treturn $4",
-      "}",
+      "\t$4",
+      "});",
       "$0"
     ],
     "description": "Returns the index of the first element in an array that pass a test"
@@ -57,7 +57,7 @@
   "Array.prototype.includes": {
     "prefix": "array includes",
     "body": [
-      "let ${1:boolean} = ${2:array}.includes(${3:element}, ${4:start})",
+      "let ${1:boolean} = ${2:array}.includes(${3:element}, ${4:start});",
       "$0"
     ],
     "description": "Check if an array contains the specified element. It is case sensitive."
@@ -65,7 +65,7 @@
   "Array.prototype.indexOf": {
     "prefix": "array indexOf",
     "body": [
-      "let ${1:index} = ${2:array}.indexOf(${3:item}, ${4:start})",
+      "let ${1:index} = ${2:array}.indexOf(${3:item}, ${4:start});",
       "$0"
     ],
     "description": "Search the array for an element and return its position."
@@ -74,23 +74,23 @@
     "prefix": "array map",
     "body": [
       "let ${1:newArray} = ${2:array}.map((${3:item}) => {",
-      "\treturn $4",
-      "}",
+      "\t$4",
+      "});",
       "$0"
     ],
     "description": "Creates a new array populated with the results of calling the provided function on every element in the array."
   },
   "Array.prototype.push": {
     "prefix": "array push",
-    "body": ["${1:array}.push((${2:items});", "$0"],
+    "body": ["${1:array}.push(${2:items});", "$0"],
     "description": "Add new items to the end of an array."
   },
   "Array.prototype.reduce": {
     "prefix": "array reduce",
     "body": [
-      "let ${1:newArray} = ${2:array}.reduce((accumulator, currentValue) => {",
-      "\treturn $4",
-      "}",
+      "let ${1:newValue} = ${2:array}.reduce((sum, currentValue) => {",
+      "\t$4",
+      "});",
       "$0"
     ],
     "description": "Reduce the values of an array to a single value (going left-to-right)."
@@ -98,9 +98,9 @@
   "Array.prototype.reduceRight": {
     "prefix": "array reduceRight",
     "body": [
-      "let ${1:newArray} = ${2:array}.reduceRight((accumulator, currentValue) => {",
-      "\treturn $4",
-      "}",
+      "let ${1:newValue} = ${2:array}.reduceRight((sum, currentValue) => {",
+      "\t$4",
+      "});",
       "$0"
     ],
     "description": "Reduce the values of an array to a single value (going left-to-right)."
@@ -117,8 +117,8 @@
     "prefix": "array some",
     "body": [
       "let ${1:result} = ${2:array}.some((${3:item}) => {",
-      "\treturn $4",
-      "}",
+      "\t$4",
+      "});",
       "${0}"
     ],
     "description": "Checks if any of the elements in an array pass a test."
