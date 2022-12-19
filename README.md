@@ -155,7 +155,7 @@ I didn't repeat any of the builtin JavaScript snippets (see [FAQ for more](#wher
   <tr>
     <td>json stringify</td>
     <td>Convert a JavaScript object to a JSON string.</td>
-    <td>let ${1:string} = JSON.parse(${2:obj});<br>$0<br></td>
+    <td>let ${1:string} = JSON.stringify(${2:obj});<br>$0<br></td>
   </tr>
 </tbody>
 </table>
