@@ -4,6 +4,16 @@ All notable changes to this extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.7.2] - 2022-12-22
+
+### Fixed
+
+- Fixed `JSON.stringify` snippet. It was a copy and paste fail from `JSON.parse` snippet, which has the same information in the *snippets.code-snippets* and *README.md*.
+
+### Added
+
+- Added sponsor filed to package.json.
+
 ## [0.7.1] - 2021-09-15
 
 ### Fixed
