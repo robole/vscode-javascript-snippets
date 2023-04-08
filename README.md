@@ -7,7 +7,7 @@
   <br>
   <br>
 </h1>
-<h4 align="center">Descriptive, easy to find JavaScript snippets, without nonsense abbreviations.</h4>
+<h4 align="center">Descriptive, easy to find JavaScript snippets.</h4>
 <br/>
 <p align="center">
 <img src="https://img.shields.io/static/v1?logo=visual-studio-code&label=made%20for&message=VS%20Code&color=0000ff" alt="Made for VSCode">
@@ -20,6 +20,8 @@ alt="Extension file size in bytes">
 <img src="https://img.shields.io/static/v1?label=built%20with&message=good%20vibrations&color=purple" alt="Built with"/>
 <a href="https://ko-fi.com/roboleary"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-$4-orange?logo=buy-me-a-coffee" alt="Buy me a coffee"></a>
 </p>
+
+> This extension is **published for education purposes**, in support of the article - [VS Code - How to write great snippets that anyone can use](https://www.roboleary.net/2021/08/23/vscode-snippets-are-not-aliases.html). It is not open for changes.
 
 Most snippet collections resemble bash aliases. You have a list of nonsense abbreviations such as: "imp", "clg", "fre". You must learn these to use them. 🤕
 
@@ -46,7 +48,7 @@ These snippets are available for the follow [language identifiers](https://code.
 
 You can install the [Snippets Ranger extension](https://marketplace.visualstudio.com/items?itemName=robole.snippets-ranger) to view the full list of snippets inside VS Code.
 
-I didn't repeat any of the builtin JavaScript snippets (see [FAQ for more](#where-do-the-standard-markdown-snippets-come-from)).
+I didn't repeat any of the builtin JavaScript snippets (see FAQ section for more info on builtin snippets).
 
 <table>
 <thead>
@@ -160,11 +162,6 @@ I didn't repeat any of the builtin JavaScript snippets (see [FAQ for more](#wher
 </tbody>
 </table>
 
-## Installation
-
-1. The extension is listed in the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=robole.javascript-snippets) and [Open VSX Marketplace](https://open-vsx.org/extension/robole/javascript-snippets) where you can download or install it directly.
-1. From the Command-line: Run the command `code --install-extension robole.javascript-snippets`.
-
 ## FAQ
 
 ### 1) Where are the builtin JavaScripts?
@@ -210,16 +207,6 @@ The `args.name` property <u>must exactly match</u> the snippet name.
 ### 5) Where can I learn more about snippets?
 
 You can read my comprehensive guide on Snippets on FreeCodeCamp: [Visual Studio Code Snippets – the Definitive VS Code Snippet Guide for Beginners](https://www.freecodecamp.org/news/definitive-guide-to-snippets-visual-studio-code/). It's not just for beginners! 😉
-
-## Show appreciation
-
-If you are happy with the extension: please star the repo 🌟, and [leave a review in the visual studio marketplace](https://marketplace.visualstudio.com/items?itemName=robole.marky-stats&ssr=false#review-details) to help others find it. 🌟🌟🌟🌟🌟
-
-You can show your appreciation by [buying me a coffee or sponsoring me](https://ko-fi.com/roboleary). This will offer me encouragement to continue, and will provide a path to dedicating more time to open-source in the future.
-
-<p align="center">
-<a href="https://ko-fi.com/roboleary"><img src="img/coffee.png" alt="buy me a coffee"></a>
-</p>
 
 ## Image Attribution
 

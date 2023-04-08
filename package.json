@@ -2,12 +2,13 @@
   "name": "javascript-snippets",
   "displayName": "Humane JS Snippets",
   "publisher": "robole",
+  "preview": true,
   "author": {
     "name": "Rob O'Leary"
   },
-  "description": "Descriptive, easy to find JavaScript snippets, without nonsense abbreviations.",
+  "description": "Descriptive, easy to find JavaScript snippets.",
   "icon": "img/logo.png",
-  "version": "0.7.2",
+  "version": "0.8.0",
   "engines": {
     "vscode": ">=1.0.0"
   },
@@ -78,6 +79,6 @@
     "build": "vsce package ."
   },
   "devDependencies": {
-    "vsce": ">=1.78.0"
+    "vsce": "^2.15.0"
   }
 }
